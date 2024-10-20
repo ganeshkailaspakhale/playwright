@@ -17,7 +17,7 @@ test.fixme('fixme annotaion test',async ({page})=>{
     console.log("this test will run but will be fixed");
 });
 
-test.only('fail annotation test',async({page})=>{
+test('fail annotation test',async({page})=>{
     // expect(1).toBe(2);
     await page.goto('/baseURL');
     const title =await page.title();

@@ -217,7 +217,7 @@ test('file upload',async ({page})=>{
 
 });
 
-test.only('testing alert window',async ({page})=>{
+test('testing alert window',async ({page})=>{
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     page.on('alert',async(alert)=>{
         const message=await alert.message();
