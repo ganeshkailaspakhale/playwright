@@ -217,16 +217,16 @@ test('file upload',async ({page})=>{
 
 });
 
-test('testing alert window',async ({page})=>{
-    await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
-    page.on('alert',async(alert)=>{
-        const message=await alert.message();
-        await console.log(message);
-        await alert.accept();
-    });
+// test('testing alert window',async ({page})=>{
+//     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+//     page.on('alert',async(alert)=>{
+//         const message=await alert.message();
+//         await console.log(message);
+//         await alert.accept();
+//     });
 
-    await page.locator('[id="confirmbtn"]').click();
+//     await page.locator('[id="confirmbtn"]').click();
 
 
-}
-);
+// }
+// );
